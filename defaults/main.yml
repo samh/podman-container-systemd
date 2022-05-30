@@ -3,6 +3,9 @@
 # state can be running or absent
 container_state: running
 
+# Enable podman-auto-update.timer
+podman_auto_update_timer: false
+
 # SystemD restart policy
 # see man systemd.service for info
 # by default we want to restart failed container

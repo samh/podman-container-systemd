@@ -234,6 +234,7 @@
       - service_file.changed
 
   - name: ensure auto update is running for images
+    when: podman_auto_update_timer
     become: true
     become_user: "{{ container_run_as_user }}"
     environment:
